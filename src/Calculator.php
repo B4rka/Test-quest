@@ -8,4 +8,18 @@ class Calculator
     {
         return $firstValue + $secondValue;
     }
+
+    public function multiplication(int $firstValue, int $secondValue): int
+    {
+        return $firstValue * $secondValue;
+    }
+
+    public function isEven(int $firstValue): bool
+    {
+        if (($firstValue % 2) === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
